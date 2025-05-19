@@ -1,0 +1,23 @@
+# General Chat Settings
+local-chat-radius: 100  # The distance (in blocks) where local chat messages can be heard
+
+# Chat Prefixes
+local-chat-prefix: "&7[Local]&r "  # Prefix for local chat messages
+global-chat-prefix: "&7[Global]&r "  # Prefix for global chat messages
+staff-chat-prefix: "&c[Staff]&r "  # Prefix for staff chat messages
+developer-chat-prefix: "&b[Dev]&r "  # Prefix for Developer Chat messages
+globalplus-chat-prefix: "&b[GlobalPlus]&r "  # Prefix for Developer Chat messages
+
+
+# Chat Behavior
+handle-global-chat-prefix: false  # If true, the plugin will format global chat messages
+return-to-global-on-leave-staffchat: true  # If true, leaving staff chat switches you to global chat
+
+# World Restrictions
+disabled-local-chat-worlds:
+  - "world_nether"
+  - "world_the_end"
+
+disabled-global-chat-worlds:
+  - "custom_world"
+

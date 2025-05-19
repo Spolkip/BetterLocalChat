@@ -1,0 +1,45 @@
+name: BetterLocalChat
+main: me.help.betterlocalchat.BetterLocalChat
+version: 0.2
+api-version: 1.20  # Adjust to your Minecraft server version
+
+commands:
+  global:
+    description: Switch to global chat
+    usage: /global
+    aliases: [g]
+  local:
+    description: Switch to local chat
+    usage: /local
+  betterlocalchat:
+    description: Manage local chat settings
+    usage: /betterlocalchat <reload/help>
+    aliases: [blc]
+  toggleglobalchat:
+    description: Toggle global chat visibility
+    usage: /toggleglobalchat
+    aliases: [tgc]
+  toggleglobalprefix:
+    description: Toggle whether plugin handles the global chat prefix
+    usage: /toggleglobalprefix
+    aliases: [tgp]
+    permissions: chat.toggleglobalprefix
+  staffchat:
+    description: Switch to staff chat
+    usage: /staffchat
+    aliases: [sc, staff]
+    permission: chat.staff
+  togglelocalview:
+    description: Toggle view of all local chats
+    usage: /togglelocalview
+    permissions: chat.togglevisibility
+  devchat:
+    description: Toggles Developer Chat
+    aliases: [dc]
+    usage: /devchat
+    permission: chat.developer
+  globalplus:
+    description: "Switch to Global Plus Chat"
+    usage: "/globalplus"
+    aliases: [pc]
+    permission: chat.paid
