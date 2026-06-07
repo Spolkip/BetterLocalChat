@@ -3,7 +3,7 @@ package me.help.betterlocalchat.handlers;
 import me.clip.placeholderapi.PlaceholderAPI;
 import me.help.betterlocalchat.BetterLocalChat;
 import net.md_5.bungee.api.chat.ClickEvent;
-import net.md_5.bungee.api.chat.ComponentBuilder;
+
 import net.md_5.bungee.api.chat.HoverEvent;
 import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
@@ -217,7 +217,7 @@ public class ChatHandler implements Listener {
         String hoverText = hoverTextTemplate.replace("%player%", sender.getName());
         String clickCmd = clickCommandTemplate.replace("%player%", sender.getName());
 
-        nameComp.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder(hoverText).create()));
+        nameComp.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new net.md_5.bungee.api.chat.hover.content.Text(hoverText)));
         nameComp.setClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, clickCmd));
 
         TextComponent separator = new TextComponent(": ");

@@ -4,7 +4,7 @@ import me.help.betterlocalchat.BetterLocalChat;
 import org.bukkit.ChatColor;
 import org.bukkit.NamespacedKey;
 import org.bukkit.Sound;
-import org.bukkit.World;
+
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -29,7 +29,7 @@ public class CommandHandler implements CommandExecutor {
         }
 
         Player player = (Player) sender;
-        World playerWorld = player.getWorld();
+
         String cmd = command.getName().toLowerCase();
 
         // --- 1. Global Chat ---
