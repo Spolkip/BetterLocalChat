@@ -1,0 +1,72 @@
+# ========================================== #
+#          BETTER LOCAL CHAT CONFIG          #
+# ========================================== #
+
+# --- General Chat Settings ---
+# The maximum distance (in blocks) that players can hear Local Chat.
+local-chat-radius: 100
+
+# If true, the plugin will format global chat. If you use a different plugin
+# for global chat formatting (like EssentialsChat), set this to false.
+handle-global-chat-prefix: false
+
+# If true, when a player leaves Staff, Dev, or GlobalPlus chat, they
+# automatically go back to Global Chat. If false, they go to Local Chat.
+return-to-global-on-leave-staffchat: true
+
+# --- Quick Chat & Cooldowns ---
+# A character players can put at the very start of a message to instantly
+# send it to Global Chat without needing to switch channels (e.g., "!Hello").
+quick-chat-prefix: "!"
+
+# How many seconds a player must wait between sending Global Chat messages.
+# Give a player the permission "chat.cooldown.bypass" to ignore this.
+global-chat-cooldown: 3
+
+# --- Mention Notifications ---
+# The sound played when a player's name is mentioned in chat.
+# Set to "NONE" to disable ping sounds.
+mention-sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+mention-pitch: 1.0
+mention-volume: 1.0
+
+# --- Interactive Chat Settings ---
+# The text that appears when you hover your mouse over a player's name in chat.
+# Supports PlaceholderAPI and standard color codes. Use %player% for their name.
+hover-text: "&6Click to message %player%!"
+
+# The command suggested in the player's text box when they click a name in chat.
+click-command: "/msg %player% "
+
+# --- Chat Prefixes ---
+# The prefixes shown before a player's name in each respective channel.
+# Supports Hex colors (&#FFFFFF) and standard color codes (&7).
+local-chat-prefix: "&7[Local]&r "
+global-chat-prefix: "&7[Global]&r "
+staff-chat-prefix: "&c[Staff]&r "
+developer-chat-prefix: "&b[Dev]&r "
+globalplus-chat-prefix: "&d[GlobalPlus]&r "
+
+# --- Quick Channel Prefixes ---
+quick-prefixes:
+  global: "!"
+  staff: "@"
+  developer: "#"
+  globalplus: "$"
+
+# --- Discord Webhooks ---
+# Paste your Discord webhook URLs here. Leave blank to disable.
+discord-webhooks:
+  global: ""
+  staff: ""
+  developer: ""
+  globalplus: ""
+# --- World Restrictions ---
+# A list of worlds where Local Chat is completely disabled.
+disabled-local-chat-worlds:
+  - "world_nether"
+  - "world_the_end"
+
+# A list of worlds where Global Chat is completely disabled.
+disabled-global-chat-worlds:
+  - "custom_world"

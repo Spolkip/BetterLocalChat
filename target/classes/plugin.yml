@@ -1,0 +1,50 @@
+name: BetterLocalChat
+version: 0.2
+main: me.help.betterlocalchat.BetterLocalChat
+api-version: 1.20 # Recommended to set this to 1.20+ for modern Paper
+authors: [YourName]
+
+commands:
+  global:
+    description: Switch to global chat
+    usage: /<command>
+    aliases: [g]
+  local:
+    description: Switch to local chat
+    usage: /<command>
+    aliases: [l]
+  betterlocalchat:
+    description: Main plugin command
+    usage: /<command> <reload|help>
+    aliases: [blc]
+  toggleglobalchat:
+    description: Toggle seeing global chat
+    usage: /<command>
+    aliases: [tgc]
+  toggleglobalprefix:
+    description: Toggle global prefix handling
+    usage: /<command>
+    aliases: [tgp]
+  staffchat:
+    description: Switch to staff chat
+    usage: /<command>
+    aliases: [sc]
+  togglelocalview:
+    description: Toggle seeing all local chats
+    usage: /<command>
+  devchat:
+    description: Switch to developer chat
+    usage: /<command>
+    aliases: [dc]
+  globalplus:
+    description: Switch to premium global chat
+    usage: /<command>
+    aliases: [gp]
+  chatspy:
+    description: Toggle admin chat spy
+    usage: /<command>
+    aliases: [spy]
+  channels:
+    description: List available channels
+    usage: /<command>
+    aliases: [chlist]

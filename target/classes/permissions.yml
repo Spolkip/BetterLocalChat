@@ -1,0 +1,20 @@
+# Permission Setup for BetterLocalChat
+permissions:
+  chat.reload:
+    description: Allows players to reload the chat configuration.
+    default: op  # Only operators can reload by default
+  chat.togglevisibility:
+    description: Allows players to toggle global chat visibility.
+    default: true  # All players can toggle chat visibility by default
+  chat.toggleglobalprefix:
+    description: Allows players to toggle whether the plugin handles the global chat prefix.
+    default: op  # Only operators by default can toggle global prefix handling
+  chat.staff:
+    description: Allows players to use and view staff chat.
+    default: op  # Only staff members can use staff chat
+  chat.seealllocal:
+    description: Allows players to see all local chats across the server.
+    default: op  # Only staff by default can see all local chats
+  chat.paid:
+    description: "Allows access to Paid Chat"
+    default: false

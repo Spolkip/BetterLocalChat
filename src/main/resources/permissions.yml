@@ -1,0 +1,43 @@
+# Permission Setup for BetterLocalChat
+permissions:
+  # --- Core Chat Channel Permissions ---
+  chat.local:
+    description: Allows players to talk in and join local chat.
+    default: true
+  chat.global:
+    description: Allows players to talk in and join global chat.
+    default: true
+  chat.paid:
+    description: Allows access to the GlobalPlus premium chat channel.
+    default: false
+  chat.staff:
+    description: Allows players to use and view staff chat.
+    default: op
+  chat.developer:
+    description: Allows players to use and view developer chat.
+    default: op
+
+  # --- Utility & Feature Permissions ---
+  chat.custommention:
+    description: Allows players to customize their mention sound via /blc mentionsound.
+    default: true
+  chat.cooldown.bypass:
+    description: Bypasses the global chat cooldown timer.
+    default: op
+  chat.togglevisibility:
+    description: Allows players to toggle global chat visibility using /toggleglobalchat.
+    default: true
+
+  # --- Admin & Moderation Permissions ---
+  chat.spy:
+    description: Allows players to use social spy to see all private channels and chats.
+    default: op
+  chat.seealllocal:
+    description: Allows players to see all local chats across the server regardless of distance.
+    default: op
+  chat.reload:
+    description: Allows players to reload the chat configuration using /blc reload.
+    default: op
+  chat.toggleglobalprefix:
+    description: Allows players to toggle whether the plugin handles the global chat prefix.
+    default: op
